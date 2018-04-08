@@ -1,0 +1,7 @@
+D:\Projects\FinApp\iBiz\bin\Debug\iBiz.dll
+D:\Projects\FinApp\iBiz\bin\Debug\iBiz.pdb
+D:\Projects\FinApp\iBiz\bin\Debug\iDB.dll
+D:\Projects\FinApp\iBiz\bin\Debug\iDB.pdb
+D:\Projects\FinApp\iBiz\obj\Debug\iBiz.csprojResolveAssemblyReference.cache
+D:\Projects\FinApp\iBiz\obj\Debug\iBiz.dll
+D:\Projects\FinApp\iBiz\obj\Debug\iBiz.pdb

@@ -1,0 +1,10 @@
+﻿<div style="-webkit-transition: -webkit-transform 3s ease-in; -webkit-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform-origin: 100% 0;
+-moz-transform-origin: 0% 0%;
+-ms-transform-origin: 0% 0%;
+-o-transform-origin: 0% 0%;
+transform-origin: 0% 0%; font-family:Arial; margin:600px auto 0 auto; width:274px;">
+<div style="position:absolute; top:76px; left:420px; letter-spacing:12px;">[date]</div>
+<div style="position:absolute; top:92px; left:50px; font-size:13px;">[title]</div>
+<div style="position:absolute; top:115px; left:460px; width:200px;">[amount]</div>
+<div style="position:absolute; top:115px; left:70px; width:300px; line-height:2; font-size:11px;">[amount_words]</div>
+</div>

@@ -1,0 +1,397 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="App.master.cs" Inherits="FinPro.FinApp.App" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="../Styles/Custom.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+    <link href="/assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/global/plugins/select2/select2.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css" />
+
+    <!-- END PAGE LEVEL PLUGIN STYLES -->
+    <!-- BEGIN PAGE STYLES -->
+    <link rel="stylesheet" type="text/css" href="/assets/global/plugins/jstree/dist/themes/default/style.min.css" />
+    <link href="/assets/admin/pages/css/tasks.css" rel="stylesheet" type="text/css" />
+    <link href="../Assets/global/css/App.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../assets/global/plugins/clockface/css/clockface.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/global/plugins/bootstrap-colorpicker/css/colorpicker.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/global/plugins/select2/select2.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css" />
+    <!-- END PAGE STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="/assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="/assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="../Styles/RadOverrides.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body class="page-header-fixed page-quick-sidebar-over-content page-sidebar-closed-hide-logo page-container-bg-solid">
+    <form id="frmMain" runat="server">
+        <!-- BEGIN HEADER -->
+        <div class="page-header navbar navbar-fixed-top">
+            <!-- BEGIN HEADER INNER -->
+            <div class="page-header-inner">
+                <!-- BEGIN LOGO -->
+                <div class="page-logo">
+                    <a href="index.html">
+                        <img src="../../assets/admin/layout/img/logo.png" alt="logo" class="logo-default" />
+                    </a>
+                    <div class="menu-toggler sidebar-toggler hide">
+                    </div>
+                </div>
+                <!-- END LOGO -->
+                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"></a>
+                <!-- END RESPONSIVE MENU TOGGLER -->
+                <!-- BEGIN TOP NAVIGATION MENU -->
+                <div class="top-menu">
+                    <ul class="nav navbar-nav pull-right">
+
+                        <!-- BEGIN USER LOGIN DROPDOWN -->
+                        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                        <li class="dropdown dropdown-user">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <img alt="" class="img-circle" src="../../assets/admin/layout/img/avatar3_small.jpg" />
+                                <span class="username username-hide-on-mobile">Nick </span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-default">
+                                <li>
+                                    <a href="extra_profile.html">
+                                        <i class="icon-user"></i>My Profile </a>
+                                </li>
+                                <li>
+                                    <a href="page_calendar.html">
+                                        <i class="icon-calendar"></i>My Calendar </a>
+                                </li>
+                                <li>
+                                    <a href="inbox.html">
+                                        <i class="icon-envelope-open"></i>My Inbox <span class="badge badge-danger">3 </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="page_todo.html">
+                                        <i class="icon-rocket"></i>My Tasks <span class="badge badge-success">7 </span>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="extra_lock.html">
+                                        <i class="icon-lock"></i>Lock Screen </a>
+                                </li>
+                                <li>
+                                    <a href="login.html">
+                                        <i class="icon-key"></i>Log Out </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- END USER LOGIN DROPDOWN -->
+
+                    </ul>
+                </div>
+                <!-- END TOP NAVIGATION MENU -->
+            </div>
+            <!-- END HEADER INNER -->
+        </div>
+        <!-- END HEADER -->
+        <div class="clearfix">
+        </div>
+        <!-- BEGIN CONTAINER -->
+        <!-- BEGIN CONTAINER -->
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <div class="page-sidebar-wrapper">
+                <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <div class="page-sidebar navbar-collapse collapse">
+                    <!-- BEGIN SIDEBAR MENU -->
+                    <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+                    <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+                    <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+                    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                    <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+                    <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                    <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                        <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+                        <li class="sidebar-toggler-wrapper">
+                            <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                            <div class="sidebar-toggler">
+                            </div>
+                            <!-- END SIDEBAR TOGGLER BUTTON -->
+                        </li>
+                        <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+
+                        <li>
+                            <asp:HyperLink ID="hplDashboard" runat="server" NavigateUrl="~/FinApp/Default.aspx">
+                                <i class="icon-home"></i>
+                                <span class="title">Dashboard</span>
+                                <span class="selected"></span>
+                            </asp:HyperLink>
+                        </li>
+                        <li class="start active open">
+                            <a href="javascript:;">
+                                <i class="icon-basket"></i>
+                                <span class="title">Vouchars</span>
+                                <span class="arrow "></span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <asp:HyperLink ID="hplJournalLink" runat="server" EnableViewState="False" NavigateUrl="~/FinApp/Transactions.aspx">
+								<i class="icon-home"></i>
+									Journal
+                                    </asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="hplPurchase" runat="server" EnableViewState="False" NavigateUrl="~/FinApp/Transactions.aspx?mod=2">
+								<i class="icon-basket"></i>
+									Purchase
+                                    </asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink5" runat="server" EnableViewState="False" NavigateUrl="~/FinApp/Transactions.aspx?mod=3">
+										<i class="icon-basket"></i>
+											Bank Payments
+                                    </asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink1" runat="server" EnableViewState="False" NavigateUrl="~/FinApp/Transactions.aspx?mod=4">
+										<i class="icon-basket"></i>
+											Sales
+                                    </asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink2" runat="server" EnableViewState="False" NavigateUrl="~/FinApp/Transactions.aspx?mod=5">
+										<i class="icon-basket"></i>
+											Cash Payments
+                                    </asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink3" runat="server" EnableViewState="False" NavigateUrl="~/FinApp/Transactions.aspx?mod=6">
+										<i class="icon-basket"></i>
+											Petty Cash
+                                    </asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink4" runat="server" EnableViewState="False" NavigateUrl="~/FinApp/Transactions.aspx?mod=7">
+										<i class="icon-basket"></i>
+											Auto Vouchars
+                                    </asp:HyperLink>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="hplCheckPrinting" runat="server" NavigateUrl="~/FinApp/Cheque_Printing.aspx">
+                                <i class="icon-rocket"></i>
+                                <span class="title">Cheque Printing</span>
+                            </asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="hplAccounts" runat="server" NavigateUrl="javascript:;">
+                                <i class="icon-settings"></i>
+                                <span class="title">Accounts</span>
+                                <span class="arrow "></span>
+                            </asp:HyperLink>
+
+                            <ul class="sub-menu">
+                                <li>
+                                    <asp:HyperLink ID="hplChartOfAccounts" runat="server" EnableViewState="False" NavigateUrl="~/FinApp/Accounts.aspx">
+								<i class="icon-home"></i>
+									Chart of Accounts
+                                    </asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="hplContacts" runat="server" EnableViewState="False" NavigateUrl="~/FinApp/Customers.aspx">
+								<i class="icon-home"></i>
+									Customers & Clients
+                                    </asp:HyperLink>
+                                </li>
+                                   <li>
+                                    <asp:HyperLink ID="HyperLink8" runat="server" EnableViewState="False" NavigateUrl="~/FinApp/Vendors.aspx">
+								<i class="icon-home"></i>
+									Vendors & Suppleirs
+                                    </asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="hplBackAccounts" runat="server" EnableViewState="False" NavigateUrl="~/FinApp/Taxes.aspx">
+								<i class="icon-home"></i>
+									Taxes
+                                    </asp:HyperLink>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <asp:HyperLink ID="hplDepartments" runat="server" NavigateUrl="~/FinApp/Departments.aspx">
+                                <i class="icon-briefcase"></i>
+                                <span class="title">Departments</span>
+                            </asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="hplReports" runat="server" NavigateUr="javascript:;">
+                                <i class="icon-wallet"></i>
+                                <span class="title">Reports</span>
+                                <span class="arrow "></span>
+                            </asp:HyperLink>
+
+                            <ul class="sub-menu">
+                                <li>
+                                    <asp:HyperLink ID="HyperLink7" runat="server" EnableViewState="False" NavigateUrl="~/FinApp/Reports_Ledger.aspx">
+								<i class="icon-home"></i>
+									    Ledger Report
+                                    </asp:HyperLink>
+                                </li>
+
+                                <li>
+                                    <asp:HyperLink ID="HyperLink6" runat="server" EnableViewState="False" NavigateUrl="~/FinApp/Reports_Trial.aspx">
+								<i class="icon-home"></i>
+									Trial Balance
+                                    </asp:HyperLink>
+                                </li>                                
+                            </ul>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="hplProblems" runat="server" NavigateUrl="~/FinApp/Problems.aspx">
+                                <i class="icon-bar-chart"></i>
+                                <span class="title">Problems</span>
+                            </asp:HyperLink>
+                        </li>
+                    </ul>
+                    <!-- END SIDEBAR MENU -->
+                </div>
+            </div>
+            <!-- END SIDEBAR -->
+            <!-- BEGIN CONTENT -->
+            <div class="page-content-wrapper">
+                <div class="page-content">
+                    <asp:ContentPlaceHolder ID="cphBody" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <!-- END CONTENT -->
+        </div>
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer">
+            <div class="page-footer-inner">
+                <%= DateTime.Now.Year.ToString() %> &copy; <a href="http://www.bestel.com.pk" title="BesTel" target="_blank">BesTel Pvt. Ltd.</a>
+            </div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+        <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+        <!-- BEGIN CORE PLUGINS -->
+        <!--[if lt IE 9]>
+<script src="../../assets/global/plugins/respond.min.js"></script>
+<script src="../../assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+        <script src="/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+        <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+        <script src="/assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+
+        <script src="/assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/jquery.pulsate.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/bootstrap-daterangepicker/moment.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+        <!-- IMPORTANT! fullcalendar depends on jquery-ui.min.js for drag & drop support -->
+        <script src="/assets/global/plugins/fullcalendar/fullcalendar.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+
+        <script src="/assets/global/plugins/jstree/dist/jstree.min.js"></script>
+        <script src="/assets/admin/pages/scripts/ui-tree.js"></script>
+
+        <script src="/assets/global/plugins/jquery-nestable/jquery.nestable.js"></script>
+        <script src="/assets/admin/pages/scripts/ui-nestable.js"></script>
+        <script src="../assets/global/scripts/datatable.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript" src="../../assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+        <script type="text/javascript" src="../../assets/global/plugins/clockface/js/clockface.js"></script>
+        <script type="text/javascript" src="../../assets/global/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+        <script type="text/javascript" src="../../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <script type="text/javascript" src="../../assets/global/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+        <script type="text/javascript" src="../../assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+        <script type="text/javascript" src="../../assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="../../assets/global/plugins/select2/select2.min.js"></script>
+        <script type="text/javascript" src="../../assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="../../assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="/assets/global/scripts/metronic.js" type="text/javascript"></script>
+        <script src="/assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+        <script src="/assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
+        <script src="/assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
+        <script src="/assets/admin/pages/scripts/index.js" type="text/javascript"></script>
+        <script src="/assets/admin/pages/scripts/tasks.js" type="text/javascript"></script>
+        <script src="/assets/global/plugins/bootstrap-confirmation/bootstrap-confirmation.min.js" type="text/javascript"></script>
+        <script src="/assets/admin/pages/scripts/ui-confirmations.js"></script>
+        <script src="../assets/pages/scripts/table-datatables-fixedheader.min.js" type="text/javascript"></script>
+        <script src="../../assets/admin/pages/scripts/components-pickers.js"></script>
+        <script src="../../assets/admin/pages/scripts/table-managed.js"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <script>
+            jQuery(document).ready(function () {
+                Metronic.init(); // init metronic core componets
+                Layout.init(); // init layout
+                QuickSidebar.init(); // init quick sidebar
+                Demo.init(); // init demo features
+                UITree.init();
+                Index.init();
+                Index.initDashboardDaterange();
+                Index.initJQVMAP(); // init index page's custom scripts
+                Index.initCalendar(); // init index page's custom scripts
+                Index.initCharts(); // init index page's custom scripts
+                Index.initChat();
+                Index.initMiniCharts();
+                Tasks.initDashboardWidget();
+                ComponentsPickers.init();
+                TableManaged.init();
+            });
+        </script>
+        <!-- END JAVASCRIPTS -->
+    </form>
+</body>
+</html>

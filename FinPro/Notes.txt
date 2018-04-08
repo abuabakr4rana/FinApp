@@ -1,0 +1,1 @@
+﻿add column transGroupIsOfficial to TransGroups table

@@ -1,0 +1,136 @@
+﻿body { margin: 0; padding: 0; height: 100%; display: block; background-color: #e9e9e9; font-family: Arial; }
+header { height: 50px; background-color: #1d2e37; position:fixed; width:100%; z-index:5000; }
+	header a { border:none; }
+.finxol_logo { float:left; }
+nav { width: 172px; background-color: #1d2e37; height: 100%; position: fixed; top:50px; z-index:100; }
+	nav ul { margin: 0; padding: 0; font-family: Arial; font-size: 14px; list-style-type: none; }
+		nav ul li { background-color: #384c56; border-top: 1px solid #495a62; border-bottom: 1px solid #1d2e37; width: 100%; }
+			nav ul li a { color: #aeb5b9; text-decoration: none; padding: 10px 0 10px 40px; display: block; background-position:left center; margin-left:10px; background-repeat:no-repeat;  }
+				nav ul li a:hover { }
+
+.report_submenu { width:200px; height:200px;position:absolute; left:150px; margin-top:-50px; top:434px; z-index:200; }
+
+h1 { float: left; font-weight: normal; font-size: 28px; margin: 0; color: #008592; }
+.content { position: absolute; top: 69px; left: 175px; z-index:50; }
+.body_content { background-color: #f4f4f4; border: 1px solid #d3d3d3; border-radius: 5px; width: 900px; padding: 10px; }
+.body_heading_strip { margin: 10px 0; }
+.body_heading_menu { float: right; }
+	.body_heading_menu ul { list-style-type: none; margin: 10px 0 0 0; padding: 0; }
+		.body_heading_menu ul li { display: inline; margin-left: 20px; }
+			.body_heading_menu ul li a { padding: 5px 20px; background-color: #d9e1e8; color:#016e79; text-decoration: none; font-size:13px; border:1px solid #b5c8d9; border-radius:3px;}
+				.body_heading_menu ul li a:hover { }
+
+.control_block { background-color: #e7ecf0; border: 1px solid #d8dce0; border-radius: 3px; padding: 10px; }
+
+.clr { clear: both; }
+
+.filter_container { background-color: #d9e1e8; border-radius: 5px; padding: 7px; border: 1px solid #d8dce0; font-size:12px; }
+.padding10 { padding:10px; }
+.align_right { text-align:right !important; }
+
+/*.grid_container { border-radius:5px; padding:7px; background-color:#d9e1e8; margin-top:10px; border:1px solid #d8dce0; }*/
+.grid_container table { width: 100%; border: 1px solid #d8dce0; margin-top: 10px; }
+    .grid_container table thead { background-color: #83949d; color: #FFF; font-size: 13px; }
+        .grid_container table thead tr { height: 26px; background-image: url(../Images/bkg_grid_header.jpg); }
+            .grid_container table thead tr td { text-align: left; padding-left: 7px; white-space: nowrap; }
+                .grid_container table thead tr td a { color: #FFF; text-decoration: none; }
+                    .grid_container table thead tr td a:hover { }
+
+a.description {  }
+a.description { position: relative; }
+    a.description span { position: absolute; width: 600px; color: #FFFFFF; background: #1EA9DD; height: 30px; line-height: 30px; text-align: center; visibility: hidden; border-radius: 6px; margin-left:250px; }
+        a.description span:after { content: ''; position: absolute; top: 100%; left: 50%; margin-left: -8px; width: 0; height: 0; border-top: 8px solid #1EA9DD; border-right: 8px solid transparent; border-left: 8px solid transparent; text-decoration: none; }
+a:hover.description span { visibility: visible; opacity: 0.9; bottom: 30px; left: 50%; margin-left: -350px; z-index: 999; text-decoration: none; }
+
+
+.grid_container table tbody { font-size: 13px; color: #2a2b2c; }
+    .grid_container table tbody tr { height: 26px; }
+        .grid_container table tbody tr td { text-align: left; padding-left: 7px; }
+            .grid_container table tbody tr td a { text-decoration: none; color: #2a2b2c; }
+                .grid_container table tbody tr td a:hover { }
+.grid_container table tfoot { }
+    .grid_container table tfoot tr { }
+        .grid_container table tfoot tr td { }
+            .grid_container table tfoot tr td a { }
+					.grid_container table tfoot tr td a:hover { }
+.grid_first_row { background-color: #f0f5f7; }
+.grid_alt_row { background-color: #f5f8f9; }
+.grid_item_tools { margin: 0; padding: 0; list-style-type: none; }
+	.grid_item_tools li { display: inline; float: left; margin-left: 5px; }
+.approve_button { background: url(../Images/Icons.png) 0 0; width: 18px; height: 18px; display: block; }
+	.approve_button:hover { background: url(../Images/Icons.png) -18px 0; width: 18px; height: 18px; display: block; }
+.approved_button { background: url(../Images/Icons.png) -18px 0; width: 18px; height: 18px; display: block; }
+.grid_item_options { background: url(../Images/Icons.png) -39px 0; width: 17px; height: 18px; display: block; }
+	.grid_item_options:hover { background: url(../Images/Icons.png) -56px 0; width: 17px; height: 18px; display: block; }
+
+.grid_sorted_col { }
+.grid_top { font-size:12px; }
+.grid_action_strip { list-style-type:none; padding:0; margin:0; }
+	.grid_action_strip li { float:right; margin-right:10px; }
+		.grid_action_strip li a { display:block; background-color:#dfe3e5; height:15px; width:15px; }
+		.grid_action_strip li a:hover { background-color:gray; }
+.grid_total_bottom_row { background-color: #dee4e8; font-size:12px; font-weight:bold; height:26px;
+}
+
+.tb_main { border:1px solid #aab8c2 !important; background-color:#f5f8fa !important; height:16px; }
+.borderless { border:none; outline:none;  }
+.backgroundless { background-color:inherit; }
+.tb_padding { padding:5px !important; }
+.tb_calendar { border:1px solid #aab8c2 !important; background-color:#f5f8fa !important; height:26px !important; }
+
+.action_panel { font-size:12px; margin-top:10px; }
+	.action_panel a { text-decoration:none; color:#f8f8f8; padding:5px 10px 5px 30px; background-color:gray; }
+.file_upload_container { padding:10px; background-color:#f0f5f7; }
+.tr_group { font-weight:bold; }
+.td_subItem { padding-left:20px; }
+.sticker_uo { border-left:3px solid gray; }
+.sticker_both { border-left:3px solid green; }
+.sticker_o { border-left:3px solid red; }
+
+.model_popup { padding:10px; border:2px solid #d8d8d8; background-color:#f8f8f8; border-radius:5px; min-width:150px; min-height:150px; }
+.modalBackground { height: 100%; background-color: black; opacity: 0.7; }
+.modal_header { border-bottom:1px solid gray; height:30px; }
+.modal_header_title { float:left; font-size:13px; margin-top:5px; }
+.modal_header_close { float:right; }
+.modal_body { margin-top:20px; padding-bottom:10px; font-size:12px; }
+
+
+.ddl_padding { padding:3px; }
+.ddl_border { border:1px solid #d6d6d6; }
+.ddl_generic { }
+.tb_padding { padding:3px; }
+.tb_border { border:1px solid #d6d6d6; }
+.tb_generic { }
+.lbtn_form { padding:5px 15px; background-color:gray; color:white; text-decoration:none;  }
+.li_dashboard { background-image: url(../Images/li_dashboard.png); }
+.li_transactions { background-image: url(../Images/li_transactions.png); }
+.li_invoice { background-image: url(../Images/li_invoice.png); }
+.li_payments { background-image: url(../Images/li_payments.png); }
+.li_reports { background-image: url(../Images/li_reports.png); }
+.li_logout { background-image: url(../Images/li_logout.png); }
+.li_sales { background-image: url(../Images/li_sales.png); }
+.li_accounts { background-image: url(../Images/li_accounts.png); }
+.li_payroll { background-image: url(../Images/li_payroll.png); }
+.li_pos { background-image: url(../Images/li_pos.png); }
+.module_additional_item_title { padding-left:10px; }
+.uploaded_files { }
+    .uploaded_files ul { margin:0 0 20px 0; list-style-type:none; padding:0;  }
+        .uploaded_files ul li { }
+
+
+	/*Telerik Overrides*/
+
+.rpRootGroup { border:1px solid #d6d6d6 !important; }
+.RadPanelBar { margin-top:5px; }
+.rcbArrowCell { visibility:hidden; }
+.rcbArrowCellRight { visibility:hidden; }
+.rcbInputCell { padding:5px !important; background-color:none; background-image:none !important; }
+.rcbInput { font:inherit !important; }
+/* Data Pager */
+
+.table_pager { width:100%; border:none !important; }
+    .table_pager tr { }
+        .table_pager tr td { }
+            .table_pager tr td a { font-family:Arial; font-size:12px; border:1px solid gray; text-decoration:none; padding:3px; color:gray;  }
+
+.pager_selected { background-color:gray !important; color:white !important; }

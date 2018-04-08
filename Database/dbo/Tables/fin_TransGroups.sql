@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[fin_TransGroups] (
+    [transGroupID]                  INT             NOT NULL,
+    [transGroupTitle]               NVARCHAR (300)  NOT NULL,
+    [transGroupCreatedOn]           DATETIME        NOT NULL,
+    [transGroupCreatedBy]           INT             NOT NULL,
+    [transGroupTotalAmount]         DECIMAL (18, 2) NOT NULL,
+    [transGroupOfficialTotalAmount] DECIMAL (18, 2) NULL,
+    [transTransCount]               INT             NOT NULL,
+    [transGroupPrefixNo]            INT             NULL,
+    [transGroupPrefixString]        NVARCHAR (5)    NULL,
+    [transGroupForeNumber]          INT             NULL,
+    [transGroupStatus]              TINYINT         NOT NULL,
+    [transGroupApprovedBy]          INT             NULL,
+    [transGroupApprovedOn]          DATETIME        NULL,
+    [transGroupReviewedBy]          INT             NULL,
+    [transGroupReviewedOn]          DATETIME        NULL,
+    [transLinkedToGroup]            INT             NULL,
+    [transGroupIsOfficial]          INT             CONSTRAINT [DF_fin_TransGroups_transGroupIsOfficial] DEFAULT ((0)) NOT NULL,
+    [transGroupRefId]               NVARCHAR (100)  NULL,
+    [transCField1]                  VARCHAR (250)   NULL,
+    [transCField2]                  VARCHAR (250)   NULL,
+    [transCField3]                  VARCHAR (250)   NULL,
+    [transCField4]                  VARCHAR (250)   NULL,
+    CONSTRAINT [PK_fin_TransGroups] PRIMARY KEY CLUSTERED ([transGroupID] ASC)
+);
+

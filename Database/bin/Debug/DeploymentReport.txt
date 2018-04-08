@@ -1,0 +1,33 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[vw_Payments] (View)
+       [dbo].[vw_AccountsWithCategory].[MS_DiagramPane1] (Extended Property)
+       [dbo].[vw_BillPayment].[MS_DiagramPane1] (Extended Property)
+       [dbo].[vw_Bills].[MS_DiagramPane1] (Extended Property)
+       [dbo].[vw_BillsView].[MS_DiagramPane1] (Extended Property)
+       [dbo].[vw_BillsView].[MS_DiagramPane2] (Extended Property)
+       [dbo].[vw_Entities].[MS_DiagramPane1] (Extended Property)
+       [dbo].[vw_Expenses].[MS_DiagramPane1] (Extended Property)
+       [dbo].[vw_Income].[MS_DiagramPane1] (Extended Property)
+       [dbo].[vw_InvoicePayment].[MS_DiagramPane1] (Extended Property)
+       [dbo].[vw_Invoices].[MS_DiagramPane1] (Extended Property)
+       [dbo].[vw_invoiceView].[MS_DiagramPane2] (Extended Property)
+       [dbo].[vw_page_transactions].[MS_DiagramPane1] (Extended Property)
+       [dbo].[vw_Payments].[MS_DiagramPane1] (Extended Property)
+       [dbo].[vw_Transactions].[MS_DiagramPane2] (Extended Property)
+
+** Supporting actions
+
+The object [FinAppNewSkin] exists in the target, but it will not be dropped even though you selected the 'Generate drop statements for objects that are in the target database but that are not in the source' check box.
+The object [FinAppNewSkin_log] exists in the target, but it will not be dropped even though you selected the 'Generate drop statements for objects that are in the target database but that are not in the source' check box.
+

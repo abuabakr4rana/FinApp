@@ -1,0 +1,11 @@
+﻿.RadComboBoxDropDown { border-color:#CCC !important; }
+.rcbList { background-color:white; }
+	.rcbList li { }
+		.rcbList li:hover { background-color:#f6f6f6; }
+.form-control { font-size:14px !important; }
+
+.radAccountDDL { background-color:#FFF; }
+.rcbEmptyMessage { font-style:normal !important; color:#a599b2 !important; }
+select option:first-child{ color: #a599b2; }
+
+.accordion .panel .panel-title .accordion-toggle { padding:5px !important; }

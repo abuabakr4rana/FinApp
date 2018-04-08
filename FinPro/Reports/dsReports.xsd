@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsReports" targetNamespace="http://tempuri.org/dsReports.xsd" xmlns:mstns="http://tempuri.org/dsReports.xsd" xmlns="http://tempuri.org/dsReports.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsReports" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsReports" msprop:Generator_UserDSName="dsReports">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtVouchar" msprop:Generator_TableClassName="dtVoucharDataTable" msprop:Generator_TableVarName="tabledtVouchar" msprop:Generator_TablePropName="dtVouchar" msprop:Generator_RowDeletingName="dtVoucharRowDeleting" msprop:Generator_RowChangingName="dtVoucharRowChanging" msprop:Generator_RowEvHandlerName="dtVoucharRowChangeEventHandler" msprop:Generator_RowDeletedName="dtVoucharRowDeleted" msprop:Generator_UserTableName="dtVouchar" msprop:Generator_RowChangedName="dtVoucharRowChanged" msprop:Generator_RowEvArgName="dtVoucharRowChangeEvent" msprop:Generator_RowClassName="dtVoucharRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="serial" msprop:Generator_ColumnVarNameInTable="columnserial" msprop:Generator_ColumnPropNameInRow="serial" msprop:Generator_ColumnPropNameInTable="serialColumn" msprop:Generator_UserColumnName="serial" type="xs:string" minOccurs="0" />
+              <xs:element name="accountTitle" msprop:Generator_ColumnVarNameInTable="columnaccountTitle" msprop:Generator_ColumnPropNameInRow="accountTitle" msprop:Generator_ColumnPropNameInTable="accountTitleColumn" msprop:Generator_UserColumnName="accountTitle" type="xs:string" minOccurs="0" />
+              <xs:element name="narration" msprop:Generator_ColumnVarNameInTable="columnnarration" msprop:Generator_ColumnPropNameInRow="narration" msprop:Generator_ColumnPropNameInTable="narrationColumn" msprop:Generator_UserColumnName="narration" type="xs:string" minOccurs="0" />
+              <xs:element name="drAmount" msprop:Generator_ColumnVarNameInTable="columndrAmount" msprop:Generator_ColumnPropNameInRow="drAmount" msprop:Generator_ColumnPropNameInTable="drAmountColumn" msprop:Generator_UserColumnName="drAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="crAmount" msprop:Generator_ColumnVarNameInTable="columncrAmount" msprop:Generator_ColumnPropNameInRow="crAmount" msprop:Generator_ColumnPropNameInTable="crAmountColumn" msprop:Generator_UserColumnName="crAmount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

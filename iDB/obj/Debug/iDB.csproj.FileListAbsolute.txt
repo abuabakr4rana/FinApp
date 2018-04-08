@@ -1,0 +1,4 @@
+D:\Projects\FinApp\iDB\bin\Debug\iDB.dll
+D:\Projects\FinApp\iDB\bin\Debug\iDB.pdb
+D:\Projects\FinApp\iDB\obj\Debug\iDB.dll
+D:\Projects\FinApp\iDB\obj\Debug\iDB.pdb

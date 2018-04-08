@@ -1,0 +1,9 @@
+﻿.input-zero-padding {
+    padding: 0px 0px 0px 0px !important; 
+    margin: 0px 0px 0px 0px !important; 
+    border-bottom:0px !important;
+}
+
+.input-zero-border{
+    border:0px !important; 
+}

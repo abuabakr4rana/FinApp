@@ -1,0 +1,5 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/FinApp/App.Master" AutoEventWireup="true" CodeBehind="Reports.master.cs" Inherits="FinPro.FinApp.Reports" %>
+
+<asp:Content ID="cContent" ContentPlaceHolderID="cphBody" runat="server">
+    <asp:ContentPlaceHolder ID="cphReport" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

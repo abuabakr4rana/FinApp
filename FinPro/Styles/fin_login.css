@@ -1,0 +1,13 @@
+﻿body { margin: 0; padding: 0; background-color: #2e323b; }
+header { height: 100px; border-bottom: 2px solid #ececec; }
+section { background-color: #ececec; height: 300px; border-top: 10px solid #4c286c; background-image:url(../Images/fin_login_bkg.png); background-position:center center; background-repeat:no-repeat; }
+.clr { clear:both; }
+.wrapper { width:700px; margin:0 auto; }
+.left_col { width:275px; float:left; }
+.logo { float:left; }
+.lines { float:left; margin-top:50px; }
+
+.right_col { float:right; width:381px; height:156px; background-image:url(../Images/fin_login_back.png); margin-top:75px; padding:30px 0 0 30px; }
+.login_control { font-family:Arial; font-size:12px; }
+.login_tb { border:none; padding:5px; width:200px; background-color:#f2eef4; }
+.login_btn { padding:5px 20px; background-color:#4c286c; color:white; border-radius:3px; text-decoration:none; }

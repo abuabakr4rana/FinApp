@@ -1,0 +1,1 @@
+Fin App is a web based application which contains financail and inventory module of ERP.

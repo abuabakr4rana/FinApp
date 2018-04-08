@@ -1,0 +1,1 @@
+﻿CREATE procedure [dbo].[SP_Coder] as Select * from fin_ChequePrinting

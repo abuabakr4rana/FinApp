@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[fin_Accounts] (
+    [accountID]                  INT             NOT NULL,
+    [accountPrefix]              VARCHAR (20)    NULL,
+    [accountNo]                  VARCHAR (20)    NULL,
+    [accountLevel]               TINYINT         NULL,
+    [accountParent]              INT             NULL,
+    [accountType]                TINYINT         NULL,
+    [associateID]                INT             NULL,
+    [accountTitle]               NVARCHAR (150)  NOT NULL,
+    [accountDescription]         NVARCHAR (500)  NULL,
+    [accountCreatedOn]           DATETIME        NOT NULL,
+    [accountCreatedBy]           INT             NULL,
+    [accountLastUpdated]         DATETIME        NULL,
+    [accountLastUpdatedBy]       INT             NULL,
+    [accountLedger]              DECIMAL (18, 2) NOT NULL,
+    [accountActual]              DECIMAL (18, 2) NOT NULL,
+    [accountDefaultVersaAccount] INT             NULL,
+    [accountIsBudgetDependent]   BIT             CONSTRAINT [DF_fin_Accounts_accountIsBudgetDependent] DEFAULT ((0)) NOT NULL,
+    [accountIsActive]            BIT             CONSTRAINT [DF_fin_Accounts_accountIsActive] DEFAULT ((1)) NOT NULL,
+    [accountIsVisible]           BIT             CONSTRAINT [DF_fin_Accounts_accountIsVisible] DEFAULT ((1)) NOT NULL,
+    [accountIsTransactable]      TINYINT         CONSTRAINT [DF_fin_Accounts_accountIsTransactable] DEFAULT ((1)) NOT NULL,
+    [accountSystemIndex]         TINYINT         NULL,
+    CONSTRAINT [PK_fin_Accounts_1] PRIMARY KEY CLUSTERED ([accountID] ASC)
+);
+
